@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8" >
+    <title> Welcome to your Account! </title>
+     <style>
+      body {
+          background-color: lightblue;
+           text-align: center;
+      }
+      </style>
+      <script>
+        function openWin() {
+              window.alert("(Need to work on Inbox) This should display a page which lists the ciphertext messages received.");
+            }
+        </script>
+
+  <script src="myaccount.js" type="text/javascript"> </script>
+  <script src="goToInbox.js" type="text/javascript"> </script>
+  </head>
+
+
+  <body>
+
+  <h2> Here's your compose box </h2>
+    <p>
+      Please compose your email here, if you would like to send a message to another user
+    </p>
+      <input type = "button" onclick = "openCompose(this.form)" value = "Compose email"/>
+
+  <h2> Here's your inbox</h2>
+    <p>
+      A list of hyperlinks to ciphertext
+      We will enter a passphrase to reveal the plaintext message here!
+    </p>
+      <br >
+      <!-- Note to self refine this process later-e.g. add href tag to access next page directly -->
+      <input type = "button" onclick = "goToInbox(this.form)" value = "Go to inbox!"/>
+    </br>
+
+
+  </body>
+</html>
